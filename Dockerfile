@@ -12,7 +12,7 @@ apt-transport-https \
 lsb-release \
 ca-certificates
 
-RUN wget -qO- https://doozer.io/keys/tvheadend/tvheadend/pgp |  apt-key add -
+RUN wget --no-check-certificate -qO- https://doozer.io/keys/tvheadend/tvheadend/pgp | apt-key add -
 
 RUN sh -c 'echo "deb https://apt.tvheadend.org/unstable $(lsb_release -sc) main" | tee -a /etc/apt/sources.list.d/tvheadend.list'
 
