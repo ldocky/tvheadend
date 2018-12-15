@@ -10,6 +10,7 @@ coreutils \
 wget \
 apt-transport-https \
 lsb-release \
+gnupg \
 ca-certificates
 
 RUN wget --no-check-certificate -qO- https://doozer.io/keys/tvheadend/tvheadend/pgp | apt-key add -
