@@ -1,4 +1,4 @@
-ROM ubuntu:bionic
+FROM ubuntu:bionic
 MAINTAINER ldocky 
 
 ENV DEBIAN_FRONTEND=noninteractive
